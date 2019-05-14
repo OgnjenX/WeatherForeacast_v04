@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">WeatherForecast</string>
+    <string name="prikazi">Prikazi</string>
+    <string name="Lokacija">Lokacija: </string>
+    <string name="Unosgrada">Unesite zeljeni grad</string>
+    <string name="temperatura">Temperatura</string>
+    <string name="Izlazak">Izlazak i zalazak sunca</string>
+    <string name="Vetar">Vetar</string>
+    <string name="Temperatura">Temperatura: 11</string>
+    <string name="Vlaznost">Vlaznost: 44</string>
+    <string name="Pritisak">Pritisak: 1000</string>
+    <string name="Izaberite">Izaberite jedinicu: </string>
+    <string name="Izlazaksunca">Izlazak sunca: 6:45</string>
+    <string name="Zalazaksunca">Zalazak sunca: 8:15</string>
+    <string name="BrzinaVetra">Brzina vetra: 4.1</string>
+    <string name="Pravac">Pravac" N</string>
+    <string name="UnesiteTekst">Unesite tekst</string>
+    <string name="DodajGad">Dodaj grad</string>
+</resources>
