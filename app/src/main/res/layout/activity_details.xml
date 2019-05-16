@@ -10,21 +10,75 @@
     android:orientation="vertical"
     >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textLokacija"
-        android:text="Drugi"
-        android:textStyle="bold"
-        android:textSize="22dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="15dp"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:weightSum="3">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textDan"
-        android:text="Neki te"
-        android:textStyle="bold"
-        android:textSize="25dp"/>
+        <TextView
+            android:id="@+id/textLokacija"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drugi"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/textDan"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:fontFamily="sans-serif"
+                android:gravity="center_vertical"
+                android:text="@string/textViewDetailsDate"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textViewDetailsLastUpdated"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed-light"
+                android:gravity="center"
+                android:textSize="11sp"
+                android:text="@string/textViewDetailsLastUpdated"
+                android:textColor="@color/colorPrimaryDark"
+                android:visibility="invisible" />
+
+            <ImageButton
+                android:id="@+id/imageButtonDetailsRefresh"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="?android:selectableItemBackgroundBorderless"
+                android:scaleType="center"
+                android:src="@drawable/ic_refresh" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonDetailsStats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorPrimary"
+            android:fontFamily="sans-serif"
+            android:text="@string/textViewDetailsStats"
+            android:textColor="@color/bela"
+            android:textSize="13sp" />
+    </LinearLayout>
     
     <LinearLayout
         android:layout_width="match_parent"
