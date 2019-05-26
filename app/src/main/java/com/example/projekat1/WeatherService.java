@@ -37,7 +37,7 @@ public class WeatherService extends Service {
 
     public static String BASE_URL = "https://api.openweathermap.org/data/2.5/weather?q=";
     public static String GRAD ;
-    public static String KEY = "&APPID=dc7466b8506032ad3e0a2c3c006e0255&units=metric";
+    public static String KEY = "&APPID=ba47633e62262a2fa2ffd72c835c3c6e&units=metric";
     public String GET_WEATHER ;
 
     public String city;
