@@ -1,38 +1,34 @@
 <resources>
-    <string name="app_name">WeatherForecast</string>
-    <string name="prikazi">Prikazi</string>
-    <string name="Lokacija">Lokacija: </string>
-    <string name="Unosgrada">Unesite zeljeni grad</string>
+    <string name="app_name">projekat1</string>
+    <string name="dan">Dan</string>
+    <string name="Naziv_aplikacije">Weather forecast</string>
+    <string name="lokacija_za_prikaz">Izaberite lokaciju:</string>
+    <string name="dodaj_grad">Dodaj grad</string>
+    <string name="stepeni">Deg</string>
+    <string name="text_za_temperaturu">Temperatura 23\nPritisak 1000\nVlaznost vazduha 44\n</string>
+    <string name="jedinica">Jedinica: </string>
+    <string name="text_vetar">Brzina vetra: 4.1 \nPravac: N</string>
+    <string name="text_izlazak">Izlazak sunca: 06:47 \nZalazak sunca: 17:45</string>
+    <string name="izlazak_text">Izlazak i zalazak</string>
+    <string name="vetar">Vetar</string>
+    <string name="temperatura_text">Temperatura</string>
+
+    <string name="Novi_Sad">Novi Sad</string>
+    <string name="London">London</string>
+    <string name="Subotica">Subotica</string>
+    <string name="Beograd">Beograd</string>
+    <string name="Moskva">Moskva</string>
+    <string name="Paris">Paris</string>
+    <string name="Madrid">Madrid</string>
+    <string name="Amsterdam">Amsterdam</string>
+    <string name="name_in_caracter_row">name_in_caracter_row</string>
+    <string name="statisitka">statisitka</string>
+
     <string name="temperatura">Temperatura</string>
-    <string name="Izlazak">Izlazak i zalazak sunca</string>
-    <string name="Vetar">Vetar</string>
-    <string name="Temperatura">Temperatura: 11</string>
-    <string name="Vlaznost">Vlaznost: 44</string>
-    <string name="Pritisak">Pritisak: 1000</string>
-    <string name="Izaberite">Izaberite jedinicu: </string>
-    <string name="Izlazaksunca">Izlazak sunca: 6:45</string>
-    <string name="Zalazaksunca">Zalazak sunca: 8:15</string>
-    <string name="BrzinaVetra">Brzina vetra: 4.1</string>
-    <string name="Pravac">Pravac" N</string>
-    <string name="UnesiteTekst">Unesite tekst</string>
-    <string name="DodajGad">Dodaj grad</string>
-    <string name="textViewDetailsDate">Datum</string>
-    <string name="textViewDetailsLastUpdated">Last updated</string>
-    <string name="textViewDetailsStats">Statistics</string>
-    <string name="title_activity_statistics">StatisticsActivity</string>
-    <string name="textViewStatsLastWeek">Prosla nedelja:</string>
-    <string name="last_week">Prosla nedelja:</string>
-    <string name="week_day">Week day:</string>
-    <string name="temperature">Temperatura:</string>
-    <string name="pressure">Pritisak:</string>
-    <string name="humidity">Vlaznost:</string>
-    <string name="monday">Ponedeljak</string>
-    <string name="tuesday">Utorak</string>
-    <string name="wednesday">Sreda</string>
-    <string name="thursday">Cetvrtak</string>
-    <string name="friday">Petak</string>
-    <string name="min_temperature">Min temperatura:</string>
-    <string name="max_temperature">Maks temperatura:</string>
-    <string name="saturday">Subota</string>
-    <string name="sunday">Nedelja</string>
+    <string name="pritisak">Pritisak</string>
+    <string name="vlaznost_vazduha">vlaznost vazduha</string>
+    <string name="datum">datum</string>
+    <string name="stop_notification">Stop Notification</string>
+
+
 </resources>
