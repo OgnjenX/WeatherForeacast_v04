@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -10,185 +8,208 @@
     android:orientation="vertical"
     android:weightSum="10"
     android:background="@color/backgroundColor1">
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="3"
-        android:orientation="horizontal"
-        android:weightSum="2">
+        android:weightSum="3"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp">
 
         <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
             android:layout_weight="1"
-            android:weightSum="2">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height = "0dp"
-                android:layout_weight="1"
-                android:textSize="25dp"
-                android:id="@+id/lokacija"/>
+            android:orientation="horizontal">
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height = "0dp"
-                android:layout_weight="1"
-                android:textSize="25dp"
-
-                android:id="@+id/dan" />
-
-
+                android:layout_height="match_parent"
+                android:text="@string/locationActivityDetails"
+                android:id="@+id/location"
+                android:textSize="20dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/startServiceButton"
+                android:text="start"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/stopServiceButton"
+                android:text="stop"/>
         </LinearLayout>
 
+
         <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
             android:layout_weight="1"
-            android:orientation="vertical"
             android:weightSum="3">
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_weight="2"/>
 
-            <LinearLayout
+            <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:weightSum="3"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/Last_updated_txv"
-                    android:layout_weight="2.8"
-                    android:textSize="10dp"
-                    />
-
-                <ImageButton
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.2"
-                    android:layout_marginLeft="50dp"
-                    android:id="@+id/image_btn_id"
-                    android:background="@drawable/refresh" />
-            </LinearLayout>
+                android:layout_height="match_parent"
+                android:text="@string/dateActivityDetails"
+                android:id="@+id/dateTextView"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:id="@+id/textViewLastUpdate"
+                android:hint="@string/textViewLastUpdate"/>
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:id="@+id/imageButtonUpdate"
+                android:background="@drawable/update"/>
 
         </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:id="@+id/buttonStatistics"
+            android:text="@string/buttonStatisticsActivitiDetails"/>
 
     </LinearLayout>
-
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="2"
         android:orientation="horizontal"
         android:weightSum="3">
-        <TextView
+        <Button
             android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1.5"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/statisitka"
-            android:id="@+id/statistika_btn"
-            />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/stop_notification"
-            android:text="@string/stop_notification"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_gravity="center"
-        android:layout_weight="2"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/temperatura"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/temperatura_text" />
-
-        <Button
-            android:id="@+id/izlazak_zalazak"
-            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="@string/izlazak_text" />
-
+            android:id="@+id/temperatureButton"
+            android:text="@string/temperatureButton"/>
         <Button
-            android:id="@+id/vetar"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/vetar" />
-
+            android:layout_height="match_parent"
+            android:id="@+id/sunRiseSetButton"
+            android:text="@string/sunRiseSetButton"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/windButton"
+            android:text="@string/windButton"/>
     </LinearLayout>
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="4">
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:id="@+id/frameLayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
-            android:weightSum="3"
-            android:id="@+id/temperatura_layout">
+            android:weightSum="2"
+            android:id="@+id/temperatureLayout">
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="0dp"
                 android:layout_weight="1"
+                android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:weightSum="3"
-                >
+                android:gravity="left"
+                android:weightSum="6">
+
                 <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:src="@drawable/sun"
+                    android:layout_gravity="left"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:layout_gravity="center"
-                    android:src="@drawable/sun" />
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/temperaturaTextView"
+                        android:text="@string/temperatureActivityDetails"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/temperature" />
+                </LinearLayout>
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:layout_gravity="center"
-                    android:id="@+id/temperatura_tv"
-
-                    android:textSize="20dp"/>
-
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/pressureTextView"
+                    android:text="@string/pressureActivityDetails"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/humidityTextView"
+                    android:text="@string/airHumidityActivityDetails"/>
 
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="@android:dimen/app_icon_size">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/unitActivityDetails"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerJedinica"
+                        android:spinnerMode="dropdown">
+
+                    </Spinner>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2"
+            android:gravity="center_vertical"
+            android:id="@+id/sunRiseSetLayout">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:textSize="25dp"
-                android:text="@string/jedinica"
-                />
-            <Spinner
+                android:id="@+id/sunRiseTextView"
+                android:text="@string/sunriseTimeActivityDetails"/>
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:spinnerMode="dropdown"
-                android:layout_weight="1"
-                android:background="@android:drawable/btn_dropdown"
-                android:id="@+id/spinner1">
-            </Spinner>
-
+                android:id="@+id/sunSetTextView"
+                android:text="@string/sunsetTimeActivityDetails"/>
 
         </LinearLayout>
 
@@ -196,34 +217,23 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:id="@+id/izlazak_zalazak_layout">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/iz_sunca_tv"
-                android:textSize="20dp"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/vetar_layout"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:weightSum="1">
+            android:weightSum="2"
+            android:gravity="center_vertical"
+            android:id="@+id/windLayout">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:id="@+id/windSpeedTextView"
+                android:text="@string/windSpeedActivityDetails"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/windDirectionTextView"
+                android:text="@string/windDirectionActivityDetails"/>
 
-                android:id="@+id/vetar_tv"
-                android:textSize="20dp"
-                android:layout_weight="1"
-                />
         </LinearLayout>
     </FrameLayout>
-
-
-
 
 
 </LinearLayout>

@@ -1,34 +1,24 @@
 <resources>
-    <string name="app_name">projekat1</string>
-    <string name="dan">Dan</string>
-    <string name="Naziv_aplikacije">Weather forecast</string>
-    <string name="lokacija_za_prikaz">Izaberite lokaciju:</string>
-    <string name="dodaj_grad">Dodaj grad</string>
-    <string name="stepeni">Deg</string>
-    <string name="text_za_temperaturu">Temperatura 23\nPritisak 1000\nVlaznost vazduha 44\n</string>
-    <string name="jedinica">Jedinica: </string>
-    <string name="text_vetar">Brzina vetra: 4.1 \nPravac: N</string>
-    <string name="text_izlazak">Izlazak sunca: 06:47 \nZalazak sunca: 17:45</string>
-    <string name="izlazak_text">Izlazak i zalazak</string>
-    <string name="vetar">Vetar</string>
-    <string name="temperatura_text">Temperatura</string>
-
-    <string name="Novi_Sad">Novi Sad</string>
-    <string name="London">London</string>
-    <string name="Subotica">Subotica</string>
-    <string name="Beograd">Beograd</string>
-    <string name="Moskva">Moskva</string>
-    <string name="Paris">Paris</string>
-    <string name="Madrid">Madrid</string>
-    <string name="Amsterdam">Amsterdam</string>
-    <string name="name_in_caracter_row">name_in_caracter_row</string>
-    <string name="statisitka">statisitka</string>
-
-    <string name="temperatura">Temperatura</string>
-    <string name="pritisak">Pritisak</string>
-    <string name="vlaznost_vazduha">vlaznost vazduha</string>
-    <string name="datum">datum</string>
-    <string name="stop_notification">Stop Notification</string>
-
-
+    <string name="app_name">PantelaWeather</string>
+    <string name="appName">PantelaWeather</string>
+    <string name="locationInsert">Lokacija za prikaz vremenske prognoze:</string>
+    <string name="mainActivityButtonText">Dodaj grad</string>
+    <string name="locationActivityDetails">Lokacija: </string>
+    <string name="dayActivityDetails">Dan: </string>
+    <string name="temperatureButton">Temperatura</string>
+    <string name="sunRiseSetButton">Izlazak i zalazak sunca</string>
+    <string name="windButton">Vetar</string>
+    <string name="unitActivityDetails">Jedinica:</string>
+    <string name="temperatureActivityDetails">Temperatura: </string>
+    <string name="pressureActivityDetails">Pritisak: </string>
+    <string name="airHumidityActivityDetails">Vlaznost vazduha: </string>
+    <string name="windDirectionActivityDetails">Pravac: </string>
+    <string name="windSpeedActivityDetails">Brzina vetra: </string>
+    <string name="sunsetTimeActivityDetails">Zalazak sunca: </string>
+    <string name="sunriseTimeActivityDetails">Izlazak sunca: </string>
+    <string name="temperature">11 °C</string>
+    <string name="dateActivityDetails">Datum:</string>
+    <string name="buttonStatisticsActivitiDetails">Statistika</string>
+    <string name="textViewLastUpdate">poslednje azuriranje</string>
+    <string name="buttonUpdate">Azuriraj</string>
 </resources>
